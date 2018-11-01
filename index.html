@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <button class="btn btn--secondary btn-demo js-tingle-modal-3">Big content? No problem!</button>
+    <!-- <button class="btn btn--secondary btn-demo js-tingle-modal-3">Big content? No problem!</button> -->
 
 
     <div class="tingle tingle-big" style="display:none !important;">
@@ -26,30 +26,33 @@
             <br>
             Participe dos nossos treinamento ELO e ELO GOLD
         </p>
-        <img src="https://placehold.it/800x400" height="400" alt="">
+        <img src="https://placehold.it/800x400" width="80%" alt="">
 
         <a href="http://iehbrasil.com.br/index.php/" target="_blank" class="btn btn-primary">Baixe agora!</a>
-            </div>
+    </div>
 
     <script>
+       
+
+
         var modalBigContent = new tingle.modal();
         var btn3 = document.querySelector('.js-tingle-modal-3');
 
-        btn3.addEventListener('click', function () {
-            modalBigContent.open();
-        });
+        // btn3.addEventListener('click', function () {
+        //     modalBigContent.open();
+        // });
 
 
         modalBigContent.setContent(document.querySelector('.tingle-big').innerHTML);
-
-
-
-
 
         var modalStickyFooter = new tingle.modal({
             footer: true,
             stickyFooter: true
         });
+
+         if (location.href.includes('#ebook')) {
+            modalBigContent.open();
+        }
     </script>
 </body>
 
