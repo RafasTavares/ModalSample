@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <head>
+        <link rel="stylesheet" href="css/tingle.min.css">
+        <script src="css/tingle.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>teste</title>
+    </head>
+</head>
+
+<body>
+    <button class="btn btn--secondary btn-demo js-tingle-modal-3">Big content? No problem!</button>
+
+
+    <div class="tingle tingle-big" style="display:none !important;">
+        <h1 class="plop">Baixe agora nosso e-Book!"</h1>
+        <p>Conheça nossa metodologia e aprimore ainda mais seus resultados.
+            <br>
+            Participe dos nossos treinamento ELO e ELO GOLD
+        </p>
+        <img src="https://placehold.it/800x400" height="400" alt="">
+
+        <a href="http://iehbrasil.com.br/index.php/" target="_blank" class="btn btn-primary">Baixe agora!</a>
+            </div>
+
+    <script>
+        var modalBigContent = new tingle.modal();
+        var btn3 = document.querySelector('.js-tingle-modal-3');
+
+        btn3.addEventListener('click', function () {
+            modalBigContent.open();
+        });
+
+
+        modalBigContent.setContent(document.querySelector('.tingle-big').innerHTML);
+
+
+
+
+
+        var modalStickyFooter = new tingle.modal({
+            footer: true,
+            stickyFooter: true
+        });
+    </script>
+</body>
+
+</html>
+
+
+<!-- .card-profile .card-description {
+    display: block!important;
+}
+} -->
