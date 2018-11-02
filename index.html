@@ -17,30 +17,40 @@
 </head>
 
 <body>
-    <!-- <button class="btn btn--secondary btn-demo js-tingle-modal-3">Big content? No problem!</button> -->
+    <button class="btn btn--secondary btn-demo js-tingle-modal-3">Big content? No problem!</button>
 
 
     <div class="tingle tingle-big" style="display:none !important;">
-        <h1 class="plop">Baixe agora nosso e-Book!"</h1>
-        <p>Conheça nossa metodologia e aprimore ainda mais seus resultados.
-            <br>
-            Participe dos nossos treinamento ELO e ELO GOLD
-        </p>
-        <img src="https://placehold.it/800x400" width="80%" alt="">
+        <h2 class="" style="margin:0;">
+            Baixe agora nosso e-Book!"
+        </h2>
+        <div class="row">
+            <div class="col-lg-10">
 
-        <a href="http://iehbrasil.com.br/index.php/" target="_blank" class="btn btn-primary">Baixe agora!</a>
+                <h5 class="" style="margin:0; color:#FFCC00;">
+                    Teste de titutlo!
+                    <br> Texto Texto Texto TextoTexto Texto Texto Texto Texto Texto Texto.
+                    <br> Texto TextoTexto Texto Texto.
+                </h5>
+                <br>
+                <a href="#" target="_blank" class="btn btn-primary">Baixe agora!</a>
+            </div>
+            <div class="col-lg-2">
+                <img src="#" style="max-height:230px;" scale="0">
+            </div>
+        </div>
     </div>
 
     <script>
-       
+
 
 
         var modalBigContent = new tingle.modal();
         var btn3 = document.querySelector('.js-tingle-modal-3');
 
-        // btn3.addEventListener('click', function () {
-        //     modalBigContent.open();
-        // });
+        btn3.addEventListener('click', function () {
+            modalBigContent.open();
+        });
 
 
         modalBigContent.setContent(document.querySelector('.tingle-big').innerHTML);
@@ -50,7 +60,7 @@
             stickyFooter: true
         });
 
-         if (location.href.includes('#ebook')) {
+        if (location.href.includes('#ebook')) {
             modalBigContent.open();
         }
     </script>
